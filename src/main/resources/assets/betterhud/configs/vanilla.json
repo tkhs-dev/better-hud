@@ -17,7 +17,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "showItem": false,
       "showIds": false,
       "invNames": false
@@ -36,7 +36,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "mode": "0"
     },
     "playerInfo": {
@@ -56,7 +56,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "offhand": false
     },
     "experience": {
@@ -92,7 +92,7 @@
           0
         ]
       },
-      "color": "#000000"
+      "color": "#ffffff"
     },
     "armorBars": {
       "showName": false,
@@ -166,7 +166,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "playerCount": false,
       "showIp": false,
       "latency": false
@@ -232,7 +232,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "24hr": false,
       "showSeconds": false,
       "dateType": "dmy",
@@ -259,7 +259,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "timeout": 1.0,
       "showBurst": false,
       "remember": false
@@ -278,7 +278,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "spaced": false,
       "precision": 0.0
     },
@@ -416,7 +416,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "24hr": false,
       "showSeconds": false,
       "dateType": "dmy",
@@ -466,7 +466,7 @@
           0
         ]
       },
-      "color": "#000000"
+      "color": "#ffffff"
     },
     "experienceInfo": {
       "position": {
@@ -482,7 +482,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "showTotalExp": false,
       "showLifetimeExp": false
     },
@@ -535,7 +535,7 @@
           0
         ]
       },
-      "color": "#000000",
+      "color": "#ffffff",
       "numberOnly": false
     },
     "biome": {
