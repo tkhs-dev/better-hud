@@ -1,8 +1,10 @@
 package jobicade.betterhud.element;
 
 import static jobicade.betterhud.BetterHud.MC;
+import static jobicade.betterhud.BetterHud.getLogger;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -16,13 +18,12 @@ import jobicade.betterhud.render.Color;
 import jobicade.betterhud.render.Grid;
 import jobicade.betterhud.render.Label;
 import jobicade.betterhud.render.Quad;
+import net.minecraft.client.renderer.tileentity.SignTileEntityRenderer;
 import net.minecraft.tileentity.SignTileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockRayTraceResult;
 
 public class SignReader extends OverlayElement {
-    private static final ResourceLocation SIGN_TEXTURE = new ResourceLocation("textures/entity/sign.png");
-
     private SettingPosition position;
 
     public SignReader() {
@@ -43,7 +44,8 @@ public class SignReader extends OverlayElement {
     public Rect render(OverlayContext context) {
         Rect bounds = position.applyTo(new Rect(96, 48));
 
-        MC.getTextureManager().bindTexture(SIGN_TEXTURE);
+        ResourceLocation SignTexture = new ResourceLocation("textures/"+SignTileEntityRenderer.getMaterial(Objects.requireNonNull(getSign()).getBlockState().getBlock()).getTextureLocation().getPath()+".png");
+        MC.getTextureManager().bindTexture(SignTexture);
         new Quad().setTexture(new Rect(2, 2, 24, 12).scale(4, 8)).setBounds(bounds).render();
 
         List<Label> labels = Stream.of(getSign().signText)
